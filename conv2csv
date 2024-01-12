@@ -1,0 +1,9 @@
+#! /bin/bash
+
+if [ $# -ne 1 ];then
+    echo "USAGE: NEED IMAGE NAME TO RUN TRIVY"
+    echo "conv2csv <image name> "
+    exit 1
+fi
+
+trivy image --ignore-unfixed --format json > temp.json
