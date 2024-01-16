@@ -43,3 +43,14 @@ type Vulnerability struct {
 	PublishedDate      string        `json:"PublishedDate"`
 	LastModifiedDate   string        `json:"LastModifiedDate"`
 }
+
+type Panzerformat struct{
+        VulnerabilityID    string        `json:"VulnerabilityID"`
+        SeveritySource     string        `json:"SeveritySource"`
+        LastModifiedDate   string        `json:"LastModifiedDate"`
+        PublishedDate      string        `json:"PublishedDate"`
+        Severity           string        `json:"Severity"`
+        PkgName            string        `json:"PkgName"`
+        InstalledVersion   string        `json:"InstalledVersion"`
+        FixedVersion       string        `json:"FixedVersion"`
+}
