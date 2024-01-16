@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func convToCSV(Vulns []Vulnerability){
+func convToCSV(Vulns []Panzerformat){
 	file , err:= os.Create("new.csv")
 	if err != nil{
 		fmt.Println(err)
