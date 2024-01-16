@@ -20,6 +20,12 @@ func main()  {
        return
     }
 
-    convToCSV(data)
+    PanzerVulns := make([]Panzerformat,0)
+    for _, item := range data{
+        PanzerVulns = append(PanzerVulns,Panzerformat{item.VulnerabilityID,item.SeveritySource,item.LastModifiedDate,item.PublishedDate,item.Severity,item.PkgName,item.InstalledVersion,item.FixedVersion})
+    }
+
+
+    convToCSV(PanzerVulns)
 
 }
